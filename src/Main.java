@@ -2,66 +2,66 @@ public class Main {
 
     public static void main(String[] args) {
 //
-        Genre pop = new Genre("POP");
-        Author clean_bandit = new Author("Clean","Bandit");
-        Music symphony = new Music("symphony", clean_bandit, pop,
-                "https://www.youtube.com/watch?v=aatr_2MstrI", 246, 40);
-        Music subeme = new Music("subele a la radio", clean_bandit, pop,
-                "https://www.youtube.com/watch?v=dczdR4laGwc", 208, 20);
-        Music night_call = new Music("Night call",clean_bandit, pop,
-                "https://www.youtube.com/watch?v=MV_3Dpw-BRY", 256, 55);
-        Music real_hero = new Music("Real Hero", clean_bandit,pop,
-                "https://www.youtube.com/watch?v=BHgYtKkSEDA",267, 60);
-        Music let_it_happen = new Music("Let it happen", clean_bandit, pop,
-                "https://www.youtube.com/watch?v=pFptt7Cargc", 256, 40);
-        Music my_love = new Music("My Love Mine All Mine ", clean_bandit, pop,
-                "https://www.youtube.com/watch?v=CwGbMYLjIpQ", 138, 50);
+        Genre rock = new Genre("ROCK");
+        Author ElvisPresley = new Author("Elvis","Presley");
+        Music CantHelp = new Music("Can't help falling in love", ElvisPresley, rock,
+                "https://youtu.be/vGJTaP6anOU?si=f0NqVtoWpJJq1iHo", 246, 40);
+        Music JailhouseRock  = new Music("Jailhouse Rock", ElvisPresley, rock,
+                "https://youtu.be/gj0Rz-uP4Mk?si=84smzzGA4pZiKDFe", 208, 20);
+        Music TheWonderofYou = new Music("Wonder of You",ElvisPresley, rock,
+                "https://youtu.be/F5eEvfOyb7k?si=ueyoYe4C8P0kvWJO", 256, 55);
+        Music MyWay  = new Music("My Way", ElvisPresley,rock,
+                "https://youtu.be/ixbcvKCl4Jc?si=ikFNKLfeIv-z6uVD",267, 60);
+        Music HoundDog = new Music("Hound Dog", ElvisPresley, rock,
+                "https://youtu.be/aNYWl13IWhY?si=UYKRbdmyMpz6-jwP", 256, 40);
+        Music UnchainedMelody = new Music("Unchained Melody", ElvisPresley, rock,
+                "https://youtu.be/1jFklrR1-YA?si=OOyqwwtaBuY-oshZ", 138, 50);
 
-        User Ryan = new User("Ryan Gosling", "POP", 500);
-        User Temi = new User("Temirlan Emilbekov", "Metal", 120);
-        Temi.buyMusic(night_call, 3);
+        User Argen = new User("Argen Joldubaev", "Rock", 9999);
+        User Adolf = new User("Adolf Hitler", "Rock", 120);
+        Adolf.buyMusic(TheWonderofYou, 3);
 
-//        Ryan.getBalance();
-//        Ryan.buyMusic(night_call);
-//        Ryan.buyMusic(real_hero);
-//        Ryan.buyMusic(night_call);
-//        Ryan.buyMusic(real_hero);
-//        Ryan.buyMusic(let_it_happen);
-//        Ryan.buyMusic(my_love, 5);
-//        Ryan.getBalance();
-//        Ryan.getPlaylist();
+        Argen.getBalance();
+        Argen.buyMusic(CantHelp, 5);
+        Argen.buyMusic(JailhouseRock, 4);
+        Argen.buyMusic(TheWonderofYou,4);
+        Argen.buyMusic(MyWay,5);
+        Argen.buyMusic(HoundDog,5);
+        Argen.buyMusic(UnchainedMelody, 5);
+        Argen.getBalance();
+        Argen.getPlaylist();
 
-//        Temi.getBalance();
-//        Temi.buyMusic(symphony);
-//        Temi.buyMusic(night_call);
-//        Temi.buyMusic(my_love);
-//        Temi.buyMusic(my_love);
-//        Temi.buyMusic(my_love);
-//        Temi.cashIn(700);
-//        Temi.buyMusic(my_love, 0);
-//        Temi.buyMusic(my_love, -1);
-//        Temi.buyMusic(my_love, 3);
-//        Temi.buyMusic(subeme);
-//        Temi.buyMusic(real_hero);
-//        Temi.getBalance();
-//        Temi.getPlaylist();
-//
-//        Ryan.listenMusic(real_hero);
-//        Ryan.listenMusic(night_call);
-//        Ryan.listenMusic(my_love);
-//        Ryan.listenMusic(my_love);
-//        Ryan.listenMusic(my_love);
-//        Ryan.listenMusic(my_love);
-//
-//        Temi.listenMusic(my_love);
-//        Temi.listenMusic(my_love);
-//        Temi.listenMusic(my_love);
-//
-//        my_love.getDownloads();
-//        my_love.getViews();
-//        my_love.getRate();
-//
-//        my_love.openVideo();
+        Adolf.getBalance();
+        Adolf.buyMusic(CantHelp, 5);
+        Adolf.buyMusic(JailhouseRock, 4);
+        Adolf.buyMusic(TheWonderofYou,4);
+        Adolf.buyMusic(MyWay,5);
+        Adolf.buyMusic(HoundDog,5);
+        Adolf.cashIn(700);
+        Adolf.buyMusic(CantHelp, 0);
+        Adolf.buyMusic(CantHelp, -1);
+        Adolf.buyMusic(CantHelp, 3);
+        Adolf.buyMusic(UnchainedMelody,9);
+        Adolf.buyMusic(TheWonderofYou,0);
+        Adolf.getBalance();
+        Adolf.getPlaylist();
+
+        Argen.listenMusic(TheWonderofYou);
+        Argen.listenMusic(JailhouseRock);
+        Argen.listenMusic(MyWay);
+        Argen.listenMusic(MyWay);
+        Argen.listenMusic(MyWay);
+        Argen.listenMusic(MyWay);
+
+        Adolf.listenMusic(UnchainedMelody);
+        Adolf.listenMusic(UnchainedMelody);
+        Adolf.listenMusic(UnchainedMelody);
+
+        CantHelp.getDownloads();
+        CantHelp.getViews();
+        CantHelp.getRate();
+
+        CantHelp.openVideo();
 
     }
 
